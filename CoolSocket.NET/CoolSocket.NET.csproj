@@ -2,6 +2,26 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>CoolSocket</AssemblyName>
+    <RootNamespace>CoolSocket</RootNamespace>
+    <Authors>Veli Tasalı</Authors>
+    <Company>Genonbeta</Company>
+    <Description>Multiplatform Remote Communication Library</Description>
+    <Copyright>Genonbeta</Copyright>
+    <PackageProjectUrl>https://github.com/genonbeta/CoolSocket.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/genonbeta/CoolSocket.NET.git</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <PackageLicenseExpression>GNU Public License version 2</PackageLicenseExpression>
+    <StartupObject />
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MSTest.TestFramework" Version="1.4.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
 
 </Project>
